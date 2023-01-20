@@ -4,6 +4,14 @@ on:
   release:
     types:
       - "published"
+  push:
+    branches:
+      - main
+    paths:
+      - docs
+      - mkdocs.yml
+      - poetry.lock
+      - pyproject.toml
 
 permissions:
   contents: read
@@ -51,10 +59,10 @@ jobs:
       - name: Get if the next concurrency group
         id: group
         run: |
-          if [ ${{ event.prerelease }} = true ]; then
+          if [ ${{ github.event.prerelease }} = true ]; then
               GROUP="prerelease"
           else
-              GROUP="prerelease"
+              GROUP=""
           fi
           echo "group=$GROUP" >> $GITHUB_OUTPUT
 
@@ -62,6 +70,7 @@ jobs:
     name: Deploy Pages
     concurrency:
       group: pages-${{ jobs.build.steps.group.outputs.group }}
+      cancel-in-progress: true
     environment:
       name: github-pages-${{ jobs.build.steps.group.outputs.group }}
       url: ${{ steps.deployment.outputs.page_url }}
