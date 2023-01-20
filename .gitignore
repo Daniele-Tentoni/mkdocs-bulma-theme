@@ -1,0 +1,8 @@
+__pycache__/
+.sass-cache/
+dist/
+node_modules/
+site/
+
+# Compilable resources
+css/
