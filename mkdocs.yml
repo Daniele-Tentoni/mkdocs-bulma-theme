@@ -1,0 +1,28 @@
+site_name: Mkdocs Bulma Theme
+site_description: Another theme for Mkdocs leveraging use of Bulma css framework.
+site_url: https://daniele-tentoni.github.io/mkdocs-bulma-theme
+site_author: Daniele Tentoni
+
+repo_url: https://github.com/daniele-tentoni/mkdocs-bulma-theme
+edit_uri: '/edit/master/'
+
+nav:
+  - Home: index.md
+  - Elements:
+    - Title: elements/title.md
+  - Components:
+    - Tables: components/tables.md
+    - Quotes: components/quotes.md
+  - Helpers:
+    - Typography: helpers/typography.md
+  - About: about.md
+
+theme:
+  name: null
+  custom_dir: 'mkdocs-bulma-theme/'
+  static_templates:
+    - 404.html
+
+plugins:
+  - search
+  - bulma-classes
