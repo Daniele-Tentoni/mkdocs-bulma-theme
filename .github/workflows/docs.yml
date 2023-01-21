@@ -19,10 +19,6 @@ permissions:
   pages: write
   id-token: write
 
-concurrency:
-  group: "pages"
-  cancel-in-progress: true
-
 jobs:
   build:
     name: Build Docs
@@ -56,7 +52,13 @@ jobs:
       - uses: actions/upload-pages-artifact@v1.0.7
         with:
           path: ./site
-      
+  
+  define_group:
+    name: Define group concurreny
+    runs-on: ubuntu-latest
+    outputs:
+      group: ${{ steps.group.outputs.group }}
+    steps:
       - name: Get if the next concurrency group
         id: group
         run: |
@@ -70,13 +72,15 @@ jobs:
   deploy:
     name: Deploy Pages
     concurrency:
-      group: pages-${{ jobs.build.steps.group.outputs.group }}
+      group: pages-${{ needs.define_group.outputs.group }}
       cancel-in-progress: true
     environment:
-      name: github-pages-${{ jobs.build.steps.group.outputs.group }}
+      name: github-pages-${{ needs.define_group.outputs.group }}
       url: ${{ steps.deployment.outputs.page_url }}
     runs-on: ubuntu-latest
-    needs: build
+    needs:
+      - build
+      - define_group
     steps:
       - id: deployment
         uses: actions/deploy-pages@v1
