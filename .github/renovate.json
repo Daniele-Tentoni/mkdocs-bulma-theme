@@ -2,5 +2,10 @@
   "$schema": "https://docs.renovatebot.com/renovate-schema.json",
   "extends": ["github>daniele-tentoni/my-renovate-config"],
   "automerge": false,
-  "baseBranches": ["beta"]
+  "baseBranches": ["beta"],
+  "ignorePaths": [
+    "**/node_modules/**",
+    "**/bower_components/**",
+    "**/bulma/**"
+  ]
 }
