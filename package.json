@@ -7,7 +7,7 @@
     "doc": "docs"
   },
   "scripts": {
-    "compile": "npx sass mkdocs-bulma-theme/assets/sass/theme.sass mkdocs-bulma-theme/assets/css/theme.css"
+    "compile": "npx sass mkdocs_bulma_theme/sass/theme.sass mkdocs_bulma_theme/css/theme.css"
   },
   "author": "daniele-tentoni <daniele.tentoni.1996@gmail.com> (https://github.com/daniele-tentoni)",
   "license": "GPL-3.0-only",

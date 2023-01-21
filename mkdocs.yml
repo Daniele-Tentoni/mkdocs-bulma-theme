@@ -19,7 +19,7 @@ nav:
 
 theme:
   name: null
-  custom_dir: 'mkdocs-bulma-theme/'
+  custom_dir: 'mkdocs_bulma_theme/'
   static_templates:
     - 404.html
 
