@@ -1,3 +1,10 @@
+# [1.0.0-beta.3](https://github.com/Daniele-Tentoni/mkdocs-bulma-theme/compare/v1.0.0-beta.2...v1.0.0-beta.3) (2023-02-06)
+
+
+### Features
+
+* improve the theme switching feature ([adda3db](https://github.com/Daniele-Tentoni/mkdocs-bulma-theme/commit/adda3db3e990d14e44f23e5bf7ceb9e5156a87b1))
+
 # [1.0.0-beta.2](https://github.com/Daniele-Tentoni/mkdocs-bulma-theme/compare/v1.0.0-beta.1...v1.0.0-beta.2) (2023-01-21)
 
 
