@@ -173,14 +173,14 @@ min-versions = ["babel (==2.9.0)", "click (==7.0)", "colorama (==0.4)", "ghp-imp
 
 [[package]]
 name = "mkdocs-bulma-classes-plugin"
-version = "1.0.0b1"
+version = "1.0.0b7"
 description = "Add support to Bulma css framework in Mkdocs"
 category = "dev"
 optional = false
 python-versions = ">=3.10,<4.0"
 files = [
-    {file = "mkdocs_bulma_classes_plugin-1.0.0b1-py3-none-any.whl", hash = "sha256:50714fb5c3e1c797a15f09a248559e15c3d557f8bdcdb6ca2105d47ffc55864f"},
-    {file = "mkdocs_bulma_classes_plugin-1.0.0b1.tar.gz", hash = "sha256:f01435a643d1b9a763c78bd052626fd4da579a059b1ce7185814c223b8f00f64"},
+    {file = "mkdocs_bulma_classes_plugin-1.0.0b7-py3-none-any.whl", hash = "sha256:bf5f912cdd668c2d8bda2ba81259a55b7ed4e2fdcccdaace1f9d651c0bae91b8"},
+    {file = "mkdocs_bulma_classes_plugin-1.0.0b7.tar.gz", hash = "sha256:45aa07b62e7ffb94db411aec6bbc99c73599faaffe4112d999f72f12c12a0f23"},
 ]
 
 [[package]]
@@ -359,4 +359,4 @@ watchmedo = ["PyYAML (>=3.10)"]
 [metadata]
 lock-version = "2.0"
 python-versions = "^3.10"
-content-hash = "f42914a68a46a13586089719c2a3f3da3c6a11d66b26da0d5668eca72eeebace"
+content-hash = "fe81d1b37066aba0ad50aa49a15d37d0dedf59847d45ce84e79c194eb93c1524"
