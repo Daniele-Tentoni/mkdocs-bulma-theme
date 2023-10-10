@@ -21,7 +21,7 @@
     "@semantic-release/exec": "^6.0.3",
     "@semantic-release/git": "^10.0.1",
     "@semantic-release/github": "^9.0.0",
-    "@semantic-release/release-notes-generator": "^10.0.3",
+    "@semantic-release/release-notes-generator": "^12.0.0",
     "sass": "^1.57.1",
     "semantic-release": "^22.0.0",
     "semantic-release-config-dt-python-poetry": "^2.0.0",
