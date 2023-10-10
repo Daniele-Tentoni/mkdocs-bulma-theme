@@ -17,11 +17,11 @@
   "devDependencies": {
     "@google/semantic-release-replace-plugin": "^1.2.0",
     "@semantic-release/changelog": "^6.0.2",
-    "@semantic-release/commit-analyzer": "^9.0.2",
+    "@semantic-release/commit-analyzer": "^11.0.0",
     "@semantic-release/exec": "^6.0.3",
     "@semantic-release/git": "^10.0.1",
     "@semantic-release/github": "^9.0.0",
-    "@semantic-release/release-notes-generator": "^10.0.3",
+    "@semantic-release/release-notes-generator": "^11.0.0",
     "sass": "^1.57.1",
     "semantic-release": "^22.0.0",
     "semantic-release-config-dt-python-poetry": "^2.0.0",
