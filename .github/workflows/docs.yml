@@ -39,7 +39,7 @@ jobs:
       # I'm using only one version of   ython,
       # I don't need to track it in Poetry cache.
       - id: cached-poetry-deps
-        uses: actions/cache@v3.3.2
+        uses: actions/cache@v3.3.3
         with:
           path: .venv
           key: venv-${{ runner.os }}-${{ hashFiles('**/poetry.lock') }}
